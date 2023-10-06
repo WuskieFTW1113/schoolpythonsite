@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333;
+}
+
+header {
+    background-color: #c92222; /* Dark green header */
+    color: #fff;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff; /* White section background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #af0808; /* Dark green headings */
+}
+
+section p {
+    color: #555;
+}
+
+.software-card {
+    background: #fff; /* White card background */
+    border: 1px solid #ddd; /* Light grey border */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefit {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.benefit img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.benefit h3 {
+    font-size: 1.5em;
+    font-family: "Sans Black", sans-serif;
+    margin: 10px 0;
+    color: #cf2020; /* Dark green heading */
+}
+
+.benefit p {
+    font-size: 1em;
+    color: #555;
+}
+
+.benefit.animated.pulse {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    background-color: #b41818; /* Dark green footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-border {
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+    padding-top: 5px;
+    font-size: 0.8em;
+}
+
+header {
+    background-color: #e53935; /* Red header for raptor theme */
+    color: #fff;
+    padding: 10px;
+    position: relative; /* Add this line */
+}
+
+nav a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Add animation styles */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+nav {
+    animation: slideDown 0.5s ease-out; /* Apply animation to nav */
+    animation-fill-mode: forwards; /* Keep the final state of animation */
+}
+

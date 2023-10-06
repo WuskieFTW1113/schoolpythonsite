@@ -1,0 +1,48 @@
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefit {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background: #cd1818;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.benefit img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.benefit h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.benefit p {
+    font-size: 1em;
+    color: #555;
+}
+
+.benefit.animated.pulse {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
